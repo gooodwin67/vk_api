@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:vk_api/api/api_client.dart';
+import 'package:vk_api/widgets/friends_screen/friends_screen.dart';
 import 'package:vk_api/widgets/login_screen/login_screen.dart';
 import 'package:vk_api/widgets/main_screen/main_screen.dart';
 import 'package:vk_api/widgets/main_screen/main_screen_provider.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => LoginScreenWidget(),
         '/main-screen': (context) => MainScreenWidget(),
+        '/main-screen/friends-screen': (context) => FriendsScreenWidget(),
       },
     );
   }
